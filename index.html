@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>UX</title>
+    <!-- Don't alter slideshow.css, CSSS slide deck needs it to work -->
+    <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+    <!-- Theme-specific styles -->
+    <link href='http://fonts.googleapis.com/css?family=Quicksand%7CPacifico%7COpen+Sans:400italic,400,300' rel='stylesheet' type='text/css' data-noprefix>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="framework/css/highlightjs-themes/vs.css" data-noprefix>
+    <link rel="stylesheet" href="framework/css/theme-llc.css" data-noprefix>
+    <link rel="shortcut icon" href="framework/img/favicon.ico"> 
+
+    <!-- Workshop-specific styles -->
+    <link rel="stylesheet" href="framework/css/workshop.css" data-noprefix>
+
+    <!-- Takes care of CSS3 prefixes! -->
+    <script src="framework/scripts/prefixfree.min.js"></script>
+
+    <!-- opens all links in a new window -->
+    <base target="_blank">
+</head>
+
+<!-- Timer/progress bar: Define the presentation duration using "data-duration" in minutes. -->
+<body data-duration="360">
+    <!-- Welcome slide -->
+    <header class="slide intro first">
+        </div>
+
+        <div class="sponsor">
+            <img src="framework/img/uofa.png" alt="University of Alberta">
+            <img src="framework/img/aicml.png" alt="AICML">
+            <img src="framework/img/blinc.png" alt="BLINC">
+        </div>
+    </header>
+
+    <main>
+        <!-- Instructor info -->
+        <section class="intro slide">
+            <div class="info">
+                <h1 class="heading-bg">
+                    <span>Things I Can't Do: UX</span>
+                </h1>
+                <h2><span>with</span> Alex Kearney</h2>
+<!-- 
+                <img class="instructor-img" src="http://cl.ly/image/0r3Q3H110G36/profile-generic.jpg" alt="instructor name"> -->
+                <!-- <ul>
+                    <li><i class="fa fa-envelope"></i><a href="mailto:">hello@email.com</a></li>
+                    <li><i class="fa fa-desktop"></i><a href="#">mywebsite.com</a></li>
+                    <li><i class="fa fa-twitter"></i><a href="http://twitter.com/">@twitter</a></li>
+                </ul>-->
+            </div>
+            <div class="sponsor">
+                <img src="framework/img/uofa.png" alt="University of Alberta">
+                <img src="framework/img/aicml.png" alt="AICML">
+                <img src="framework/img/blinc.png" alt="BLINC">
+            </div>
+        </section>
+
+        <!-- Talk Summary -->
+        <section class="slide centered" data-markdown>
+            ##What This Talk is About
+
+            Here's a summary of my talk
+        </section>
+
+        <!-- Conclusion -->
+        <section class="slide centered" data-markdown>
+            ##A demonstration of what can be
+            ##accomplished through CSS-based design
+        </section>
+    </main>
+
+    <footer>
+  
+    </footer>
+    
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="framework/scripts/slideshow.js"></script>
+
+    <!-- Uncomment the plugins you need -->
+    <script src="framework/scripts/plugins/css-edit.js"></script>
+    <script src="framework/scripts/plugins/css-snippets.js"></script>
+    <script src="framework/scripts/plugins/css-controls.js"></script>
+    <!-- <script src="plugins/code-highlight.js"></script>-->
+
+    <script src="framework/scripts/plugins/markdown/marked.js"></script>
+    <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+    <!-- <script src="framework/scripts/plugins/highlight/highlight.js"></script> -->
+    <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script>
+        var slideshow = new SlideShow();
+
+        // Grabs all the .snippet elements
+        var snippets = document.querySelectorAll('.snippet');
+        for(var i=0; i<snippets.length; i++) {
+            new CSSSnippet(snippets[i]);
+        }
+
+        // Adds "edit me" note to editable code areas
+        jQuery(document).ready(function(){
+            jQuery(".snippet").before("<span class=\"edit\">edit me</span>");
+        });
+    </script>
+</body>
+</html>
