@@ -9,8 +9,9 @@
     <!-- Theme-specific styles -->
     <link href='http://fonts.googleapis.com/css?family=Quicksand%7CPacifico%7COpen+Sans:400italic,400,300' rel='stylesheet' type='text/css' data-noprefix>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="framework/css/highlightjs-themes/vs.css" data-noprefix>
     <link rel="stylesheet" href="framework/css/theme-llc.css" data-noprefix>
+    <!-- <link rel="stylesheet" href="framework/css/bootstrap.min.css" data-noprefix> -->
+    <link rel="stylesheet" href="framework/css/highlightjs-themes/vs.css" data-noprefix>
     <link rel="shortcut icon" href="framework/img/favicon.ico"> 
 
     <!-- Workshop-specific styles -->
@@ -24,7 +25,7 @@
 </head>
 
 <!-- Timer/progress bar: Define the presentation duration using "data-duration" in minutes. -->
-<body data-duration="360">
+<body data-duration="10">
     <!-- Welcome slide -->
     <header class="slide intro first">
         </div>
@@ -57,35 +58,101 @@
 
         <!-- Personal Summary -->
         <section class="slide" >
-            <div data-markdown>
-                ##What This Talk is About          
-                Here's a summary of my talk
+            <br>
+            <div class="" data-markdown>
+                ##Hello.          
+                
+                * Artificial Intelligence & Computer Science Student
+
+
+                * 3rd Year at University of Edinburgh
+                
+
+                * Machine Learning for Prosthetics with RLAI
+
+                * I'm going to talk about something I know nothing about
             </div>
-        
+            <img style="display: block; margin-left: auto; margin-right: auto" src="framework/img/Edinburgh.jpg" alt="BLINC">
             <div class="presenter-notes">
-                I'm a C.S. Student
+                I'm a C.S. Student; I'm from 
             </div>
         </section>
 
         <!-- Playing with Web-Dev Summary. -->
         <section class="slide">
             <div data-markdown>
-                ##What This Talk is About          
-                Here's a summary of my talk
+                ##What is an internet?          
+                
+                * Outside of research I've been playing with web-based projects
+            
             </div>
-        
+            <img class="img-responsive" style="width:32%" src="framework/img/ugly.png" alt="ugly">
+            <img class="img-responsive" style="width:32%" src="framework/img/bad.png" alt="bad">
+            <img class="img-responsive" style="width:32%" src="framework/img/good.png" alt="good">
+            <div data-markdown>
+                * I'm a science student: I focus on building the functionality first
+                
+                * Having the specified functionality doesn't guarentee something is easy to use.
+
+                * Being pretty doesn't gaurentee something is easy to use. 
+
+
+                No matter how impressive something is technically, **if people can't intuitively understand it people won't use it.** 
+            </div>
             <div class="presenter-notes">
                 I'm going to talk about something that's completely outside of the work I've done this summer
+            </div>
+        </section>
+
+        <section class="slide centered">
+            <div style="margin-top:5%; font-size:30px" data-markdown>
+                No matter how impressive something is technically
+
+                **if people can't intuitively understand it people won't use it.** 
+            </div>
+            <br>
+            <img class="img-responsive" src="framework/img/workshop/i-wont-respond.gif" alt="good">
+            <div class="presenter-notes">
+                I'm going to talk about something that's completely outside of the work I've done this summer
+            </div>
+        </section>
+
+        <section class="slide centered">
+            <div>
+                <h2>Doesn't that sound familiar?</h2>
+                <br>
+                <img src="framework/img/workshop/hand-scrunch.gif" alt="Arms">
+            </div>
+            
+            <div data-markdown class="pull-left">
+            * rejection rate stats
+            
+            * rejection rate stats
+
+            * rejection rate stats
+            </div>
+
+            <div class="presenter-notes">
+                After building things, I'd share them with friends. Most of the time they'd need guidance. They
+                wouldn't know what a system's for, how to use it. etc
             </div>
         </section>
 
         <!-- I don't Know How To Use This. -->
         <section class="slide">
             <div data-markdown>
-                ##What This Talk is About          
-                Here's a summary of my talk
+                ##So, how do we improve usability?
             </div>
-
+            <blockquote style="margin-top: 15%">  
+                <p>
+                    <b>UX and design is more important than protocols</b>, formats, data models, schema etc. We focus on UX first, and then as we figure that out <b> build the absolutely simplest, easiest, and most minimal protocols & formats sufficient to support that UX, and nothing more</b>. 
+                </p>
+                <p>
+                    AKA UX before plumbing.
+                </p>
+                <footer> <cite title="Source Title">Indiewebcamp wiki</cite></footer>
+            </blockquote>
+            
             <div class="presenter-notes">
                 After building things, I'd share them with friends. Most of the time they'd need guidance. They
                 wouldn't know what a system's for, how to use it. etc
@@ -95,9 +162,17 @@
         <!-- This started to sound farmiliar. -->
         <section class="slide">
             <div data-markdown>
-                ##What This Talk is About          
-                Here's a summary of my talk
+                ##Okay, but what is User Experience?         
+                
+
+                First, it's not design. Second, it's not user interface.
+
+                **The interface is not the solution.**
+
+
             </div>
+
+            <img style="display: block; margin-left: auto; margin-right: auto" src="framework/img/ux-umbrella.png" alt="Arms">
 
             <div class="presenter-notes">
                 I'd heard all this before, but not in the same setting. I'm often hearing about this from.
@@ -108,8 +183,18 @@
         <!-- . -->
         <section class="slide">
             <div data-markdown>
-                ##What This Talk is About          
-                Here's a summary of my talk
+                ##But how can we sensibly integrate this?          
+                
+
+
+                1. user research.
+                2. some experiments to validate the assumptions.
+                3. Some IA work is done to break out the product/site into the logical areas and hierarchies.
+                Various wireframes and sketches are drawn to start to organize how users interact.
+                4. Now mockups with UI included can be made with confidence.
+                5. Mockups are user tested and iterated on through some prototypes or experiments.
+                6. After the mockups have been vetted, it’s now time to code up the interface – UI Design!
+                Once the usability of the UI has been honed, you can move it on to production – the place that people usually think of as the singular UI.
             </div>
 
             <div class="presenter-notes">
@@ -121,21 +206,186 @@
         <!-- This started to sound farmiliar. -->
         <section class="slide">
             <div data-markdown>
-                ##What This Talk is About          
-                Here's a summary of my talk
+                ##We already discuss usability with subjects!        
+                
+                **Users are notoriously un-reliable**
             </div>
 
+            <blockquote>
+                <p>
+                    In reporting what they do remember, people rationalize their behavior. Countless times I have heard statements like "I would have seen the button if it had been bigger." Maybe. All we know is that the user didn't see the button.
+                </p>
+            </blockquote>
+
+            <div data-markdown>
+                Asking the user may even lead to the wrong desgin decisions.
+
+                1. People will say what they think you want to hear
+                2. People are telling you what they remember doing, not what they did
+                3. People rationalize their behaviour
+            </div>
+            
+            <br>
+
+            <p style="text-align: center"><b>How much someone likes a design is not correlated with usability</b></p>
             <div class="presenter-notes">
                 So what can we do about it?
             </div>
         </section>
+
+        <section class="slide centered">
+            <h2>I can't even<h2>
+            <br>
+            <img class="img-responsive" src="framework/img/workshop/cant-even.gif" alt="good">
+            <div class="presenter-notes">
+                I'm going to talk about something that's completely outside of the work I've done this summer
+            </div>
+        </section>
+
+        <section class="slide">
+            <div data-markdown>
+                ##We have Tools!        
+                
+            </div>
+            <div style="padding-top: 10%" >
+                <div style="float: left; margin-right: 20%;">
+                <ul>
+                    <li>Usability-Lab Studies</li>
+                    <li style="color:orange;">Participatory Design</li>
+                    <li>Focus Groups</li>
+                    <li style="color:green;">Interviews</li>
+                    <li style="color:orange;">Eyetracking</li>
+                    <li style="color:green;">Moderated Remote Usability Studies</li>
+                    <li >Unmoderated Remote Panel Studies</li>
+                </ul>
+            </div>
+            <div style="">
+                <ul>
+                    <li style="color:green;">Concept Testing</li>
+                    <li>Diary Studies</li>
+                    <li>Card Sorting</li>
+                    <li style="color:orange;">Actionstream Analysis</li>
+                    <li>A/B Testing</li>
+                    <li>Unmoderated UX Studies</li>
+                    <li style="color:orange;">Desirability Studies</li>
+                </ul>
+            </div>
+            </div>
+            <br>
+            <div data-markdown>
+                **We even already do a lot of these.**        
+                
+                The overlap between what UX designers hope to accomplish and prosthetic training tasks
+                is a telling sign that these fields may be able to share ideas with each other.
+            </div>
+            <div class="presenter-notes">
+                So what can we do about it?
+            </div>
+        </section>
+
+        <section class="slide">
+            <div data-markdown>
+                ##Things we could do more of        
+                
+            </div>
+            <div style="padding-top: 10%" >
+                <div style="float: left; margin-right: 20%;">
+                <ul>
+                    <li class="greyed">Usability-Lab Studies</li>
+                    <li class="greyed">Participatory Design</li>
+                    <li class="greyed">Focus Groups</li>
+                    <li class="greyed">Interviews</li>
+                    <li >Eyetracking</li>
+                    <li>Moderated Remote Usability Studies</li>
+                    <li>Unmoderated Remote Panel Studies</li>
+                </ul>
+            </div>
+            <div style="">
+                <ul>
+                    <li>Concept Testing</li>
+                    <li>Diary Studies</li>
+                    <li>Card Sorting</li>
+                    <li>Actionstrem Analysis</li>
+                    <li>A/B Testing</li>
+                    <li class="greyed">Unmoderated UX Studies</li>
+                    <li>Desirability Studies</li>
+                </ul>
+            </div>
+            </div>
+            <br>
+            <div class="delayed" data-markdown>
+                **With all of these options, we need to be cognizant of the distinction
+                beween scripted and unscripted use.**        
+                
+            </div>
+            <div class="presenter-notes">
+                20 UX Methods in Brief
+
+Here’s a short description of the user research methods shown in the above chart:
+
+Usability-Lab Studies: participants are brought into a lab, one-on-one with a researcher, and given a set of scenarios that lead to tasks and usage of specific interest within a product or service.
+
+Ethnographic Field Studies: researchers meet with and study participants in their natural environment, where they would most likely encounter the product or service in question.
+
+Participatory Design: participants are given design elements or creative materials in order to construct their ideal experience in a concrete way that expresses what matters to them most and why.
+
+Focus Groups: groups of 3-12 participants are lead through a discussion about a set of topics, giving verbal and written feedback through discussion and exercises.
+
+Interviews: a researcher meets with participants one-on-one to discuss in depth what the participant thinks about the topic in question.
+
+Eyetracking: an eyetracking device is configured to precisely measure where participants look as they perform tasks or interact naturally with websites, applications, physical products, or environments.
+
+Usability Benchmarking: tightly scripted usability studies are performed with several participants, using precise and predetermined measures of performance.
+
+Moderated Remote Usability Studies: usability studies conducted remotely with the use of tools such as screen-sharing software and remote control capabilities.
+
+Unmoderated Remote Panel Studies:  a panel of trained participants who have video recording and data collection software installed on their own personal devices uses a website or product while thinking aloud, having their experience recorded for immediate playback and analysis by the researcher or company.
+
+Concept Testing: a researcher shares an approximation of a product or service that captures the key essence (the value proposition) of a new concept or product in order to determine if it meets the needs of the target audience; it can be done one-on-one or with larger numbers of participants, and either in person or online.
+
+Diary/Camera Studies: participants are given a mechanism (diary or camera) to record and describe aspects of their lives that are relevant to a product or service, or simply core to the target audience; diary studies are typically longitudinal and can only be done for data that is easily recorded by participants.
+
+Customer Feedback: open-ended and/or close-ended information provided by a self-selected sample of users, often through a feedback link, button, form, or email.
+
+Desirability Studies: participants are offered different visual-design alternatives and are expected to associate each alternative with a set of  attributes selected from a closed list; these studies can be both qualitative and quantitative.
+
+Card Sorting: a quantitative or qualitative method that asks users to organize items into groups and assign categories to each group. This method helps create or refine the information architecture of a site by exposing users’ mental models.
+
+Clickstream Analysis: analyzing the record of screens or pages that users clicks on and sees, as they use a site or software product; it requires the site to be instrumented properly or the application to have telemetry data collection enabled.
+
+A/B Testing (also known as “multivariate testing,” “live testing,” or “bucket testing”): a method of scientifically testing different designs on a site by randomly assigning groups of users to interact with each of the different designs and measuring the effect of these assignments on user behavior.
+
+Unmoderated UX Studies: a quantitative or qualitative and automated method that uses a specialized research tool to captures participant behaviors (through software installed on participant computers/browsers) and attitudes (through embedded survey questions), usually by giving participants goals or scenarios to accomplish with a site or prototype.
+
+True-Intent Studies: a method that asks random site visitors what their goal or intention is upon entering the site, measures their subsequent behavior, and asks whether they were successful in achieving their goal upon exiting the site.
+
+Intercept Surveys: a survey that is triggered during the use of a site or application.
+
+Email Surveys: a survey in which participants are recruited from an email message.
+
+from: http://www.nngroup.com/articles/usability-metrics/
+            </div>
+        </section>
+
+        <section class="slide centered">
+            <h2>Onwards<h2>
+            <br>
+            <img class="img-responsive" src="framework/img/workshop/now-what.gif" alt="good">
+            <div class="presenter-notes">
+                I'm going to talk about something that's completely outside of the work I've done this summer
+            </div>
+        </section>
+
         <!-- Conclusion -->
         <section class="intro slide">
             <div class="info">
                 <h1 class="heading-bg">
                     <span style="color: white">Usability First</span>
                 </h1>
-                <ul class="decoration: none">
+
+                <h2 ><span style="font-size: 70px; text-align:center">Thanks for listening</span><br> Questions?</h2>
+
+                <ul class="footer">
                     <li><i class="fa fa-envelope"></i><a href="mailto:">Kearney@ualberta.com</a></li>
                 </ul>
             </div>
